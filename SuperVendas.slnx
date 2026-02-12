@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="APIConsumidor/APIConsumidor.csproj" Id="3e4be49e-5dd5-4e34-aa4c-f57352547f51" />
   <Project Path="SuperVendas/SuperVendas.csproj" />
 </Solution>
