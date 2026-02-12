@@ -26,5 +26,28 @@ namespace SuperVendas.Controller
             return _context.products.Count();
         }
 
+        public void UpdateProduct(Product product)
+        {
+            var productToUpdate = _context.products.FirstOrDefault(x => x.Id == product.Id);
+
+            productToUpdate.Name = product.Name;
+            productToUpdate.Category = product.Category;
+            productToUpdate.InStock = product.InStock;
+
+            _context.SaveChanges();
+        }
+
+        public void AddProduct(Product product)
+        {
+            _context.products.Add(product);
+            _context.SaveChanges();
+        }
+
+        public void DeleteProduct(int id)
+        {
+            var dado = _context.products.FirstOrDefault(x => x.Id == id);
+            _context.Remove(dado);
+            _context.SaveChanges();
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace SuperVendas
                 {
                     if (Usuario.Text == item.Usuario && Senha.Text == item.Senha)
                     {
-                        ListaVendas listaVendas = new ListaVendas();
+                        ListaProdutos listaVendas = new ListaProdutos();
                         listaVendas.Show();
                         this.Hide();
                     } else

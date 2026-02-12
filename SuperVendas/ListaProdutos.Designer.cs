@@ -1,6 +1,6 @@
 ﻿namespace SuperVendas
 {
-    partial class ListaVendas
+    partial class ListaProdutos
     {
         /// <summary>
         /// Required designer variable.
@@ -44,6 +44,8 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(690, 315);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellClick += dataGridView1_CellClick;
+            dataGridView1.CellDoubleClick += dataGridView1_CellDoubleClick;
             // 
             // Adicionar
             // 
@@ -84,7 +86,7 @@
             label1.TabIndex = 4;
             label1.Text = "label1";
             // 
-            // ListaVendas
+            // ListaProdutos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -94,8 +96,8 @@
             Controls.Add(button1);
             Controls.Add(Adicionar);
             Controls.Add(dataGridView1);
-            Name = "ListaVendas";
-            Text = "ListaVendas";
+            Name = "ListaProdutos";
+            Text = "Lista Produto";
             Load += ListaVendas_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
